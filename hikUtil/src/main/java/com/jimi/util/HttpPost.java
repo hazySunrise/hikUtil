@@ -9,16 +9,16 @@ import org.apache.logging.log4j.Logger;
 /**
  * 发送请求到服务器并获取服务器返回值
  */
-public class HikSender {
+public class HttpPost {
 
-    private static Logger LOGGER = LogManager.getLogger(HikSender.class);
+    private static Logger LOGGER = LogManager.getLogger(HttpPost.class);
 
     /**
      * @param requestParam 请求参数
      * @param url 访问RCS-2000的完整路径
      * @return 服务器返回结果
      */
-    public static String send(String url, String requestParam) throws Exception{
+    static String send(String url, String requestParam) throws Exception{
         //发送并获取服务器返回值
         String resultMsg = post(url ,requestParam);
         resultMsg = new String(resultMsg.getBytes(), "UTF-8");
