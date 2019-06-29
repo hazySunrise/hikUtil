@@ -3,7 +3,7 @@ package com.jimi.util;
 /**
  * 基础请求参数
  */
-public  class BaseRequestPackage {
+public class BaseRequestPackage {
 
     private String reqCode;
 
@@ -13,13 +13,11 @@ public  class BaseRequestPackage {
 
     private String tokenCode;
 
-    public BaseRequestPackage(){ }
-
-    public BaseRequestPackage(String reqCode){
+    BaseRequestPackage(String reqCode){
         this.reqCode = reqCode;
     }
 
-    public BaseRequestPackage(String reqCode, String reqTime, String clientCode, String tokenCode) {
+    BaseRequestPackage(String reqCode, String reqTime, String clientCode, String tokenCode) {
         this.reqCode = reqCode;
         this.reqTime = reqTime;
         this.clientCode = clientCode;

@@ -29,13 +29,14 @@ public class SchedulingTaskPackage extends BaseRequestPackage {
 
     private String data;
 
-    public SchedulingTaskPackage(String taskTyp, String userCallCode, List<String> userCallCodePath ) {
+    SchedulingTaskPackage(String taskTyp, String userCallCode, List<String> userCallCodePath ) {
         super(CodeGenerate.generate());
         this.taskTyp = taskTyp;
         this.userCallCode = userCallCode;
         this.userCallCodePath = userCallCodePath;
     }
-    public SchedulingTaskPackage(String taskType, String userCallCode, List<String> userCallCodePath, String podCode, String podDir, String podType, String materialLot, String priority, String robotCode, String taskCode, String data) {
+
+    SchedulingTaskPackage(String taskType, String userCallCode, List<String> userCallCodePath, String podCode, String podDir, String podType, String materialLot, String priority, String robotCode, String taskCode, String data) {
         super(CodeGenerate.generate());
         this.taskTyp = taskType;
         this.userCallCode = userCallCode;

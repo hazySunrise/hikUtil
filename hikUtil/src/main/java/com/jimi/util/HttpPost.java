@@ -9,7 +9,7 @@ import org.apache.logging.log4j.Logger;
 /**
  * 发送请求到服务器并获取服务器返回值
  */
-public class HttpPost {
+ class HttpPost {
 
     private static Logger LOGGER = LogManager.getLogger(HttpPost.class);
 
