@@ -5,6 +5,7 @@ import com.alibaba.fastjson.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
+
 /**
  * 该类用于生成AGV调度任务单并发送到服务器
  * 该类所有方法的参数，没有特别说明的情况下，都不能为空，否则会抛出{@link NullPointerException}<br>
@@ -12,7 +13,7 @@ import java.util.List;
  * Date: Created in 2019/6/26 11:59
  * Author: ct
  */
-public class AgvSchedulingTaskSender {
+public class SchedulingTaskSender {
 
 
     /**
